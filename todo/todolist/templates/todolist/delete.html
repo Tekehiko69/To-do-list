@@ -1,0 +1,15 @@
+{% extends 'todolist/layout.html' %}
+{% load static %}
+
+{% block title %}Удаление записи{% endblock %}
+
+{% block content %}
+<div class="welcome">
+    <h1>Удалить запись</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button class="btn btn-success" type="submit">Удалить статью</button>
+    </form>
+</div>
+
+{% endblock %}

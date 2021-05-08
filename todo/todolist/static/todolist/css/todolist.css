@@ -1,0 +1,42 @@
+body{
+    background-color: #c9a5a5;
+}
+main .create img {
+    width: 300px;
+    margin: 10px auto 20px;
+    display: block;
+}
+
+main{
+    float: top;
+}
+
+.container-fluid a:hover, .nav-item a:hover{
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+    transition: all .6s ease;
+}
+
+main .welcome{
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+main .welcome h1{font-size: 75px;}
+
+.alert-warning{
+    clear: both;
+    width: 400px;
+    margin: 20px 37%;
+    text-align: center;
+}
+
+.create form{
+    text-align: center;
+    width: 360px;
+    margin-left: 38%;
+}
+
+
+

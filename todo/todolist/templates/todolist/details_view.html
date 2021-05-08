@@ -1,0 +1,16 @@
+{% extends 'todolist/layout.html' %}
+
+{% block title %}Список дел{% endblock %}
+
+{% block content %}
+    <div class="welcome">
+        <h1>{{ article.title}}</h1>
+        <p>{{ article.full_text}}</p>
+        <p>Приоритет: {{ article.priority }}</p>
+        <a href="/" class="btn btn-primary">Вернуться назад</a>
+        <a href="{% url 'delete-page' article.id %}" class="btn btn-danger">Удалить</a>
+        <a href="{% url 'update-page' article.id %}" class="btn btn-info">Редактировать</a>
+
+    </div>
+
+{% endblock %}

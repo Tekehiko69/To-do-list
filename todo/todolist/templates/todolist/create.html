@@ -1,0 +1,19 @@
+{% extends 'todolist/layout.html' %}
+{% load static %}
+
+{% block title %}Добавление записи{% endblock %}
+
+{% block content %}
+<div class="create">
+    <img  src="{% static 'todolist/img/imgformain-page.png' %}">
+    <form method="post">
+    {% csrf_token %}
+    {{ form.title }}<br>
+    {{ form.full_text }}<br>
+    {{ form.priority }}<br>
+    <span>{{ error }}</span>
+    <button class="btn btn-success" type="submit" href="/">Добавить дело</button>
+    </form>
+</div>
+
+{% endblock %}
